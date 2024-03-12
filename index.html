@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .producto {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+        }
+        #carrito {
+            border: 1px solid #333;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div id="productos">
+    <h2>Productos Disponibles</h2>
+    <div class="producto" id="producto-726">
+        <h3>Camsieta Ohaio</h3>
+        <p>Precio: $5.00</p>
+        <button onclick="agregarAlCarrito(726)">Agregar al carrito</button>
+    </div>
+    <div class="producto" id="producto-897">
+        <h3>Short Las Vegas</h3>
+        <p>Precio: $10.00</p>
+        <button onclick="agregarAlCarrito(897)">Agregar al carrito</button>
+    </div>
+    <div class="producto" id="producto-432">
+        <h3>Sandalias Egypt</h3>
+        <p>Precio: $40.00</p>
+        <button onclick="agregarAlCarrito(432)">Agregar al carrito</button>
+    </div>
+</div>
+<div id="carrito">
+    <h2>Carrito de Compras</h2>
+    <ul id="lista-carrito"></ul>
+    <p>Total: $<span id="total">0.00</span></p>
+    <button onclick="realizarCompra()">Realizar Compra</button>
+</div>
+
+
+
+<script src="./JS/main.js"></script>
+</body>
+</html> 
